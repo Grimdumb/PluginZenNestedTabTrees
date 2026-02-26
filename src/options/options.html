@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Nested Tab Trees Settings</title>
+    <style>
+      body { font-family: system-ui, sans-serif; padding: 20px; }
+      label { display: block; margin: 0 0 14px; }
+      select { margin-left: 8px; }
+      #status { margin-top: 12px; color: #206020; }
+    </style>
+  </head>
+  <body>
+    <h1>Nested Tab Trees Settings</h1>
+
+    <label>
+      Bookmark open behavior
+      <select id="bookmarkOpenBehavior">
+        <option value="newRoot">Create new root</option>
+        <option value="attachToActive">Attach to active tab</option>
+      </select>
+    </label>
+
+    <label>
+      Manual open behavior
+      <select id="manualOpenBehavior">
+        <option value="newRoot">Create new root</option>
+        <option value="attachToActive">Attach to active tab</option>
+      </select>
+    </label>
+
+    <label>
+      External open behavior
+      <select id="externalOpenBehavior">
+        <option value="newRoot">Create new root</option>
+        <option value="attachToLastActive">Attach to last active tab</option>
+      </select>
+    </label>
+
+    <button id="save">Save settings</button>
+    <p id="status"></p>
+
+    <script src="./options.js"></script>
+  </body>
+</html>

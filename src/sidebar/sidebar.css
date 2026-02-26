@@ -1,0 +1,35 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 12px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+
+.tree-node {
+  margin: 4px 0;
+  padding-left: calc(var(--depth) * 14px);
+  border-left: 1px solid #d0d4db;
+}
+
+.tree-node button {
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.tree-node button:hover {
+  background: #eef3ff;
+}
+
+.tree-node button.is-active {
+  background: #dce8ff;
+  font-weight: 600;
+}
