@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Zen Nested Tab Trees",
+  "version": "0.1.0",
+  "description": "Tracks tab parent-child relationships and visualizes browsing chains in a sidebar.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "src/background.js"
+    ]
+  },
+  "sidebar_action": {
+    "default_title": "Nested Tab Trees",
+    "default_panel": "src/sidebar/sidebar.html"
+  },
+  "options_ui": {
+    "page": "src/options/options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zen-nested-tab-trees@example.local",
+      "strict_min_version": "109.0"
+    }
+  }
+}
